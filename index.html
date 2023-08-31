@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Password Generator App</title>
+</head>
+<body>
+
+    <main>
+        <p class="title">Password Generator</p>
+        <div class="container">
+            <!-- Div for display password -->
+            <div class="display">
+                <input id="passwordText" type="text" placeholder="P4$5W0rD!" readonly/>
+                <div class="copy">
+                    <p class="copy-msg" id="copyMsg">copied</p>
+                    <img id="copyIcon" src="./images/icon-copy.svg" alt="copy-icon"/>
+                </div>
+            </div>
+            
+    <div class="features">
+            <!-- Slider section -->
+            <div class="option">
+                <label for="slider" class="sliderLabel" >Character Length<span class="sliderValue" id="sliderValue"></span></label>
+                <input type="range" name="slider" id="slider" min="0" max="15" value="0">
+            </div>
+            
+            <!-- CheckBox Section -->
+            <div class="checkboxes">
+                <label for="inclUppercase" class="checkboxLabel">
+                    <input type="checkbox" id="inclUppercase">Include Uppercase Letters</label> 
+                <label for="inclLowercase" class="checkboxLabel">
+                    <input type="checkbox" id="inclLowercase">Include Lowercase Letters</label>
+                <label for="inclNumber" class="checkboxLabel">
+                    <input type="checkbox" id="inclNumber">Include Numbers
+                </label>
+                <label for="inclSymbol" class="checkboxLabel">
+                    <input type="checkbox" id="inclSymbol">Include Symbols
+                </label> 
+            </div>
+
+            <!-- Strength Block -->
+            <div class="strength">
+                <h2>Strength</h2>
+                <div class="strengthLevel">
+                    <p id="strengthLevelText"></p>
+                    <div class="bar" id="bar1"></div>
+                    <div class="bar" id="bar2"></div>
+                    <div class="bar" id="bar3"></div>
+                    <div class="bar" id="bar4"></div>
+                </div>
+            </div>
+            
+            <!-- Button Section -->
+            <button class="generateBtn" id="generateBtn">Generate</button>
+        </div>
+    </div>
+        <p id="error-msg">Please select one or more options</p>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
