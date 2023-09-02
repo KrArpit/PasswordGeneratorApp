@@ -202,6 +202,7 @@ input[type="checkbox"]:checked:after{
     border: 2px solid hsl(127, 100%, 82%);
     outline: none;
     background: hsl(127, 100%, 82%);
+    color: hsl(252, 17%, 6%);
     cursor: pointer;
     transition: all ease 0.25s;
     margin-bottom: 10px;
@@ -210,6 +211,21 @@ input[type="checkbox"]:checked:after{
     border: 2px solid hsl(127, 100%, 82%);
     background: hsl(247, 11%, 15%);
     color: hsl(127, 100%, 82%);
+}
+/* media queries  */
+@media screen and (max-width:380px) {
+    .strength h2{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    #strengthLevelText{
+        font-size: 17px;
+        width: 100%;
+    }
+    .bar{
+        display: none;
+    }
+    
 }
 
 #error-msg{
